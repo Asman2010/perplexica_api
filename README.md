@@ -15,7 +15,7 @@ Please ensure you have the correct version of Perplexica installed before using 
 ## Installation
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/perplexica-api.git
+   https://github.com/Asman2010/perplexica_api.git
    cd perplexica-api
    ```
 
@@ -27,7 +27,7 @@ Please ensure you have the correct version of Perplexica installed before using 
 3. Ensure you have Chrome and ChromeDriver installed for Selenium to work properly.
 
 ## Usage
-Here's a basic example of how to use the Perplexica API. You can find the code file in examples directory:
+Here's a basic example of how to use the Perplexica API. You can find the code file in `example` directory:
 
 ```python
 from search_api import InternetSearch
