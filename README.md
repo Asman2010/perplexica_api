@@ -32,22 +32,24 @@ Here's a basic example of how to use the Perplexica API. You can find the code f
 ```python
 from search_api import InternetSearch
 
-# Create a new search instance
-search = InternetSearch("Who created Apple")
+def main():
+    query = "Who created Apple"
+    search = InternetSearch(query)
 
-# Perform the search
-print("Submitting query to Perplexica...")
-search.search()
+    print("Performing search...")
+    search.search()
 
-# Retrieve and process the results
-print("Processing results...")
-result = search.process()
+    print("Processing results...")
+    result = search.process()
+    
+    if result:
+        print("Search result:")
+        print(result)
+    else:
+        print("Failed to retrieve search result.")
 
-if result:
-    print("Search result:")
-    print(result)
-else:
-    print("Failed to retrieve search result.")
+if __name__ == "__main__":
+    main()
 ```
 
 ## Configuration
