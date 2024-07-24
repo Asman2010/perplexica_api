@@ -1,3 +1,5 @@
+from search_api import InternetSearch
+
 def main():
     query = "Who created Apple"
     search = InternetSearch(query)
