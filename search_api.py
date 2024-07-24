@@ -65,7 +65,7 @@ class InternetSearch:
             url = f"{self.API_URL}{chat_id}"
             response = requests.get(url, timeout=5)
             response.raise_for_status()
-            return response.json()["messages"][1]["content"]
+            return response.json()["messages"][0]["content"]
         except (RequestException, KeyError, IndexError) as e:
             print(f"Error processing chat: {e}")
             return None
