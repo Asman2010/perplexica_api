@@ -52,14 +52,6 @@ if __name__ == "__main__":
     main()
 ```
 
-## Configuration
-You may need to adjust the following constants in `search_api.py` to match your Perplexica setup:
-
-- `BASE_URL`: The base URL for Perplexica queries
-- `API_URL`: The API endpoint for retrieving chat information
-- `WAIT_TIME`: Time to wait between result checks
-- `MAX_RETRIES`: Maximum number of retry attempts
-
 ## Error Handling
 The API includes basic error handling for common issues such as network problems or unexpected responses. Check the console output for error messages if you encounter any issues.
 
